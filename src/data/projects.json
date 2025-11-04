@@ -1,0 +1,172 @@
+{
+  "projects": [
+    {
+      "id": 1,
+      "title": "Velox",
+      "description": "He desarrollado una página web que se compone de varios elementos interactivos y funcionales. Cada componente está diseñado para cumplir una función específica, lo que permite una navegación fluida y una experiencia de usuario mejorada. Estos componentes incluyen secciones como encabezados, menús de navegación, formularios, galerías de imágenes y pies de página. Al integrar estos elementos, la página no solo es visualmente atractiva, sino también fácil de usar, lo que facilita a los visitantes acceder a la información que necesitan. Además, cada componente se ha optimizado para garantizar un rendimiento eficiente y una correcta visualización en diferentes dispositivos.",
+      "image": "/proyect1.png",
+      "technologies": ["React", "Node.js", "MongoDB", "Stripe", "JavaScript", "Tailwind"],
+      "category": "Full Stack",
+      "status": "Completed",
+      "year": "2023",
+      "links": {
+        "live": "https://edu-platform.example.com",
+        "github": "https://github.com/Carloslara27/Velox"
+      }
+    },
+    {
+      "id": 2,
+      "title": "Voice AI – Convierte texto y voz en experiencias interactivas",
+      "description": "Desarrollé Voice AI, una aplicación web interactiva enfocada en mejorar la comunicación y accesibilidad mediante tecnología de voz e inteligencia artificial. El proyecto permite que el usuario escriba un texto o hable directamente al micrófono, y la aplicación lee en voz alta el contenido utilizando un sistema avanzado de síntesis de voz (Text-to-Speech). Además, puede reconocer y transcribir audio en tiempo real, creando una experiencia fluida entre texto y voz.",
+      "image": "/proyect2.png",
+      "technologies": ["Next.js", "TypeScript", "Voiceai", "audioprocessing", "uiuxdesign"],
+      "category": "Full Stack",
+      "status": "Completed",
+      "year": "2022",
+      "links": {
+        "live": "https://edu-platform.example.com",
+        "github": "https://github.com/Carloslara27/Voice"
+      }
+    },
+    {
+      "id": 3,
+      "title": "CarpiShop",
+      "description": "Desarrollé una tienda de ropa utilizando un stack tecnológico compuesto por HTML, CSS, y JavaScript, donde implementé una interfaz atractiva y funcional para ofrecer una experiencia de usuario optimizada. La tienda permite a los usuarios explorar y seleccionar productos, y a través del uso de LocalStorage, se habilitó la capacidad de guardar los artículos seleccionados en el navegador, garantizando que los datos del carrito de compras y las preferencias del usuario se mantengan de manera persistente entre sesiones.",
+      "image": "/proyect3.png",
+      "technologies": ["React", "ecommerce", "javascript", "cssTailwind", "Node.js"],
+      "category": "Web App",
+      "status": "Completed",
+      "year": "2023",
+      "links": {
+        "live": "https://edu-platform.example.com",
+        "github": "https://github.com/Carloslara27/Ropa-tienda"
+      }
+    },
+    {
+      "id": 4,
+      "title": "CRUD",
+      "description": "Desarrolla un sistema integral de gestión de datos que implemente las operaciones de Crear, Leer, Actualizar y Eliminar (CRUD). Este proyecto utiliza PHP y MySQL para la lógica del backend y Bootstrap 5 para la interfaz, proporcionando una experiencia interactiva y dinámica a través de ventanas modales.",
+      "image": "/proyect4.png",
+      "technologies": ["php", "mysql", "javascript", "read", "bootstrap5", "CSS3"],
+      "category": "Frontend",
+      "status": "Completed",
+      "year": "2024",
+      "links": {
+        "live": "https://edu-platform.example.com",
+        "github": "https://github.com/Carloslara27/crud-php"
+      }
+    },
+    {
+      "id": 5,
+      "title": "CRUD EN CI 3",
+      "description": "Desarrolla un sistema integral de gestión de datos que implemente las operaciones de Crear, Leer, Actualizar y Eliminar. Este proyecto estará basado en PHP y MySQL, y permitirá una gestión eficiente y sencilla de la información.",
+      "image": "/proyect5.png",
+      "technologies": ["php", "mysql", "bootstrap", "javascript", "ajax", "css"],
+      "category": "Frontend",
+      "status": "Completed",
+      "year": "2023",
+      "links": {
+        "live": "https://edu-platform.example.com",
+        "github": "https://github.com/Carloslara27/crud-master"
+      }
+    },
+    {
+      "id": 6,
+      "title": "Dashboard Simple con Next.js",
+      "description": "Desarrollé un dashboard web moderno y funcional utilizando Next.js, enfocado en ofrecer una interfaz limpia, rápida y fácil de usar para la gestión y visualización de datos. El objetivo del proyecto fue crear una plataforma minimalista pero potente, donde el usuario pudiera visualizar métricas, estadísticas y módulos organizados dentro de un entorno eficiente.",
+      "image": "/proyect6.png",
+      "technologies": ["javascript", "html5", "CSS3", "React", "Next.js", "Tailwind"],
+      "category": "Frontend",
+      "status": "Completed",
+      "year": "2023",
+      "links": {
+        "live": "https://edu-platform.example.com",
+        "github": "https://github.com/Carloslara27/Deshboard"
+      }
+    },
+    {
+      "id": 7,
+      "title": "SB Admin",
+      "description": "Desarrolla un sistema integral de gestión de datos que permite centralizar, organizar y administrar información de manera eficiente. El proyecto incluye un dashboard interactivo y responsivo, construido con Bootstrap, que facilita la visualización y el control de los datos en tiempo real. Además, incorpora un sistema de autenticación seguro mediante un Login, garantizando que solo usuarios autorizados puedan acceder a la información.",
+      "image": "/proyect7.png",
+      "technologies": ["React", "html5", "Tailwind", "JavaScript", "CSS3", "Node.js"],
+      "category": "Mobile",
+      "status": "In Progress",
+      "year": "2022",
+      "links": {
+        "live": "https://edu-platform.example.com",
+        "github": "https://github.com/Carloslara27/Dashboard-PHP"
+      }
+    },
+    {
+      "id": 8,
+      "title": "Frankie Systeman",
+      "description": "Desarrollé una tienda de ropa utilizando un stack tecnológico compuesto por HTML, CSS, y JavaScript, donde implementé una interfaz atractiva y funcional para ofrecer una experiencia de usuario optimizada. La tienda permite a los usuarios explorar y seleccionar productos, y a través del uso de LocalStorage, se habilitó la capacidad de guardar los artículos seleccionados en el navegador, garantizando que los datos del carrito de compras y las preferencias del usuario se mantengan de manera persistente entre sesiones.",
+      "image": "/proyect8.png",
+      "technologies": ["Next.js", "Node.js", "React", "javascript", "Tailwind", "css"],
+      "category": "Full Stack",
+      "status": "In Progress",
+      "year": "2021",
+      "links": {
+        "live": "https://edu-platform.example.com",
+        "github": "https://github.com/Carloslara27/"
+      }
+    },
+    {
+      "id": 9,
+      "title": "Frankie Systeman",
+      "description": "Desarrollé una tienda de ropa utilizando un stack tecnológico compuesto por HTML, CSS, y JavaScript, donde implementé una interfaz atractiva y funcional para ofrecer una experiencia de usuario optimizada. La tienda permite a los usuarios explorar y seleccionar productos, y a través del uso de LocalStorage, se habilitó la capacidad de guardar los artículos seleccionados en el navegador, garantizando que los datos del carrito de compras y las preferencias del usuario se mantengan de manera persistente entre sesiones.",
+      "image": "/proyect9.png",
+      "technologies": ["React", "React", "javascript", "Tailwind", "MongoDB", "Node.js"],
+      "category": "Web App",
+      "status": "In Progress",
+      "year": "2022",
+      "links": {
+        "live": "https://edu-platform.example.com",
+        "github": "https://github.com/Carloslara27/"
+      }
+    },
+    {
+      "id": 10,
+      "title": "Web tem Voting System",
+      "description": "Desarrollé una tienda de ropa utilizando un stack tecnológico compuesto por HTML, CSS, y JavaScript, donde implementé una interfaz atractiva y funcional para ofrecer una experiencia de usuario optimizada. La tienda permite a los usuarios explorar y seleccionar productos, y a través del uso de LocalStorage, se habilitó la capacidad de guardar los artículos seleccionados en el navegador, garantizando que los datos del carrito de compras y las preferencias del usuario se mantengan de manera persistente entre sesiones.",
+      "image": "/proyect10.png",
+      "technologies": ["html5", "html5", "React", "Python", "React Native", "Node.js"],
+      "category": "Frontend",
+      "status": "In Progress",
+      "year": "2023",
+      "links": {
+        "live": "https://edu-platform.example.com",
+        "github": "https://github.com/Carloslara27/"
+      }
+    },
+    {
+      "id": 11,
+      "title": "IoT Home Automation",
+      "description": "Desarrollé una tienda de ropa utilizando un stack tecnológico compuesto por HTML, CSS, y JavaScript, donde implementé una interfaz atractiva y funcional para ofrecer una experiencia de usuario optimizada. La tienda permite a los usuarios explorar y seleccionar productos, y a través del uso de LocalStorage, se habilitó la capacidad de guardar los artículos seleccionados en el navegador, garantizando que los datos del carrito de compras y las preferencias del usuario se mantengan de manera persistente entre sesiones.",
+      "image": "/proyect11.png",
+      "technologies": ["React Native", "Node.js", "CSS3", "Stripe", "JavaScript", "Firebase"],
+      "category": "Full Stack",
+      "status": "In Progress",
+      "year": "2023",
+      "links": {
+        "live": "https://edu-platform.example.com",
+        "github": "https://github.com/Carloslara27/"
+      }
+    },
+    {
+      "id": 12,
+      "title": "Educatiom System Platform",
+      "description": "Desarrollé una tienda de ropa utilizando un stack tecnológico compuesto por HTML, CSS, y JavaScript, donde implementé una interfaz atractiva y funcional para ofrecer una experiencia de usuario optimizada. La tienda permite a los usuarios explorar y seleccionar productos, y a través del uso de LocalStorage, se habilitó la capacidad de guardar los artículos seleccionados en el navegador, garantizando que los datos del carrito de compras y las preferencias del usuario se mantengan de manera persistente entre sesiones.",
+      "image": "/proyect12.png",
+      "technologies": ["Next.js", "React Native", "html5", "javascript", "PostgreSQL", "Firebase"],
+      "category": "Full Stack",
+      "status": "In Progress",
+      "year": "2023",
+      "links": {
+        "live": "https://edu-platform.example.com",
+        "github": "https://github.com/Carloslara27/"
+      }
+    }
+  ]
+}
