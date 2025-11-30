@@ -193,18 +193,32 @@ export default function Portfolio() {
                       </a>
                     </motion.div>
 
-                    <div className="flex flex-wrap gap-2 justify-center pt-2">
+                    <div className="flex flex-wrap gap-3 justify-center pt-4">
                       {interests.map((interest, i) => (
-                        <motion.span
+                        <motion.div
                           key={i}
-                          initial={{ opacity: 0, scale: 0.9 }}
-                          whileInView={{ opacity: 1, scale: 1 }}
+                          initial={{ opacity: 0, scale: 0.9, y: 20 }}
+                          whileInView={{ opacity: 1, scale: 1, y: 0 }}
                           viewport={{ once: true }}
-                          transition={{ duration: 0.3, delay: 0.6 + i * 0.05 }}
-                          className="bg-muted px-4 py-2 rounded-full text-sm border border-border transition-colors hover:border-foreground/20"
+                          transition={{ duration: 0.5, delay: 0.6 + i * 0.1 }}
+                          whileHover={{
+                            y: -5,
+                            scale: 1.05,
+                            transition: { duration: 0.2 },
+                            boxShadow: "0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.08)"
+                          }}
+                          className="relative group"
                         >
-                          {interest}
-                        </motion.span>
+                          <span className="relative z-10 bg-gradient-to-br from-background to-muted px-5 py-3 rounded-xl text-sm font-medium text-foreground border border-border transition-all duration-300 group-hover:border-foreground/30 shadow-sm flex items-center gap-2">
+                            {interest === "Desarrollo de Software" && <span className="text-lg">💻</span>}
+                            {interest === "Inteligencia Artificial" && <span className="text-lg">🤖</span>}
+                            {interest === "Viajes & Cultura" && <span className="text-lg">✈️</span>}
+                            {interest === "Lectura & Aprendizaje" && <span className="text-lg">📚</span>}
+                            {interest === "Productividad & Hábitos" && <span className="text-lg">🎯</span>}
+                            {interest}
+                          </span>
+                          <div className="absolute inset-0 bg-gradient-to-br from-blue-500/10 to-purple-500/10 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 -z-10" />
+                        </motion.div>
                       ))}
                     </div>
                   </div>
