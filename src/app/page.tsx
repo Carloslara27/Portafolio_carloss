@@ -677,7 +677,7 @@ export default function Portfolio() {
                         <Download className="w-5 h-5 text-blue-400" />
                       </div>
                       <div>
-                        <p className="font-medium text-foreground">Curriculum Vitae</p>
+                        <p className="font-medium text-foreground">Currículum Vitae</p>
                         <p className="text-xs text-foreground/60">PDF • 150 KB</p>
                       </div>
                     </a>

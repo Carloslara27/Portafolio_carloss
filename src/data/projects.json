@@ -128,7 +128,7 @@
     },
     {
       "id": 10,
-      "title": "Web tem Voting System",
+      "title": "Web Tem to be Voting System",
       "description": "Desarrollé una tienda de ropa utilizando un stack tecnológico compuesto por HTML, CSS, y JavaScript, donde implementé una interfaz atractiva y funcional para ofrecer una experiencia de usuario optimizada. La tienda permite a los usuarios explorar y seleccionar productos, y a través del uso de LocalStorage, se habilitó la capacidad de guardar los artículos seleccionados en el navegador, garantizando que los datos del carrito de compras y las preferencias del usuario se mantengan de manera persistente entre sesiones.",
       "image": "/proyect10.png",
       "technologies": ["html5", "html5", "React", "Python", "React Native", "Node.js"],
@@ -142,7 +142,7 @@
     },
     {
       "id": 11,
-      "title": "IoT Home Automation",
+      "title": "Tmo system Votiend",
       "description": "Desarrollé una tienda de ropa utilizando un stack tecnológico compuesto por HTML, CSS, y JavaScript, donde implementé una interfaz atractiva y funcional para ofrecer una experiencia de usuario optimizada. La tienda permite a los usuarios explorar y seleccionar productos, y a través del uso de LocalStorage, se habilitó la capacidad de guardar los artículos seleccionados en el navegador, garantizando que los datos del carrito de compras y las preferencias del usuario se mantengan de manera persistente entre sesiones.",
       "image": "/proyect11.png",
       "technologies": ["React Native", "Node.js", "CSS3", "Stripe", "JavaScript", "Firebase"],
@@ -156,7 +156,7 @@
     },
     {
       "id": 12,
-      "title": "Educatiom System Platform",
+      "title": "Education System volites",
       "description": "Desarrollé una tienda de ropa utilizando un stack tecnológico compuesto por HTML, CSS, y JavaScript, donde implementé una interfaz atractiva y funcional para ofrecer una experiencia de usuario optimizada. La tienda permite a los usuarios explorar y seleccionar productos, y a través del uso de LocalStorage, se habilitó la capacidad de guardar los artículos seleccionados en el navegador, garantizando que los datos del carrito de compras y las preferencias del usuario se mantengan de manera persistente entre sesiones.",
       "image": "/proyect12.png",
       "technologies": ["Next.js", "React Native", "html5", "javascript", "PostgreSQL", "Firebase"],
