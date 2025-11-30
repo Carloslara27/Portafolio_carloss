@@ -90,41 +90,10 @@ export function ProjectsSection() {
         className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-12"
       >
         {[
-          { 
-            title: "Total Projects", 
-            value: projectsData.projects.length,
-            color: "text-blue-400 dark:text-blue-400",
-            bg: "bg-blue-500/10 dark:bg-blue-500/10"
-          },
-          { 
-            title: "Completed", 
-            value: projectsData.projects.filter((p) => p.status === "Completed").length,
-            color: "text-green-400 dark:text-green-400",
-            bg: "bg-green-500/10 dark:bg-green-500/10"
-          },
-          { 
-            title: "In Progress", 
-            value: projectsData.projects.filter((p) => p.status === "In Progress").length,
-            color: "text-yellow-400 dark:text-yellow-400",
-            bg: "bg-yellow-500/10 dark:bg-yellow-500/10"
-          },
-          { 
-            title: "Categories", 
-            value: categories.length - 1,
-            color: "text-purple-400 dark:text-purple-400",
-            bg: "bg-purple-500/10 dark:bg-purple-500/10"
-          }
+         
         ].map((stat, index) => (
           <motion.div
-            key={stat.title}
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.5 + index * 0.1 }}
-            whileHover={{ y: -5, scale: 1.03 }}
-            className={`${stat.bg} dark:${stat.bg} backdrop-blur-xl border border-gray-800/50 dark:border-border rounded-2xl p-5 text-center transition-all duration-300 hover:shadow-lg`}
-          >
-            <div className={`text-3xl font-bold ${stat.color}`}>{stat.value}</div>
-            <div className="text-sm text-gray-400 dark:text-gray-400 mt-1">{stat.title}</div>
+            >
           </motion.div>
         ))}
       </motion.div>
