@@ -701,7 +701,7 @@ export default function Portfolio() {
           </div>
         </section>
 
-        {/* Footer */}
+        {/* Footeer */}
         <footer className="py-12 border-t border-border/50 relative z-10">
           <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center">
