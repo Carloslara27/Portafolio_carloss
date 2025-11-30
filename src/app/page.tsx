@@ -622,81 +622,72 @@ export default function Portfolio() {
               Contáctame
             </motion.h2>
 
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-              <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true, margin: "-100px" }}
-                transition={{ duration: 0.6, delay: 0.1, ease: "easeOut" }}
-                className="space-y-8">
-                <PortfolioCard delay={0.9}>
-                  <div className="space-y-6">
-                    <h3 className="text-xl font-semibold text-foreground">Información de Contacto</h3>
+            <div className="grid grid-cols-1 lg:grid-cols-1 gap-22">
+              <div className="lg:col-span-1 flex justify-center">
+                <motion.div
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true, margin: "-100px" }}
+                  transition={{ duration: 0.6, delay: 0.1, ease: "easeOut" }}
+                  className="w-full max-w-md space-y-8">
+                  <PortfolioCard delay={0.9}>
+                    <div className="space-y-6">
+                      <h3 className="text-xl font-semibold text-foreground">Información de Contacto</h3>
+                      <div className="space-y-4">
+                        <div className="flex items-center gap-3 text-sm text-foreground/80">
+                          <Mail className="w-5 h-5 text-blue-400" />
+                          <span>carlosslara27@gmail.com</span>
+                        </div>
+                        <div className="flex items-center gap-3 text-sm text-foreground/80">
+                          <MapPin className="w-5 h-5 text-purple-400" />
+                          <span>Argentina Lules, Tucuman</span>
+                        </div>
+                      </div>
+
+                      <div className="pt-4">
+                        <h3 className="text-xl font-semibold text-foreground mb-4">Sígueme</h3>
+                        <div className="flex gap-4">
+                          {[
+                            { name: "GitHub", icon: <Github className="w-5 h-5" />, href: "https://github.com/Carloslara27" },
+                            { name: "LinkedIn", icon: <Linkedin className="w-5 h-5" />, href: "https://www.linkedin.com/in/carlos-lara-163234359/" },
+                          ].map((social, i) => (
+                            <motion.a
+                              key={social.name}
+                              href={social.href}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              whileHover={{ scale: 1.1, y: -2 }}
+                              whileTap={{ scale: 0.95 }}
+                              className="p-3 bg-gray-800/50 backdrop-blur-sm rounded-xl text-foreground/80 hover:text-foreground hover:bg-gray-700/50 border border-gray-700/50 transition-all">
+                              {social.icon}
+                            </motion.a>
+                          ))}
+                        </div>
+                      </div>
+                    </div>
+                  </PortfolioCard>
+
+                  <PortfolioCard delay={1}>
                     <div className="space-y-4">
-                      <div className="flex items-center gap-3 text-sm text-foreground/80">
-                        <Mail className="w-5 h-5 text-blue-400" />
-                        <span>carlosslara27@gmail.com</span>
-                      </div>
-                      <div className="flex items-center gap-3 text-sm text-foreground/80">
-                        <MapPin className="w-5 h-5 text-purple-400" />
-                        <span>Argentina Lules, Tucuman</span>
-                      </div>
+                      <h3 className="text-xl font-semibold text-foreground">Descargar CV</h3>
+                      <a 
+                        href="/cv-carlos-lara.pdf"
+                        download="CV-Carlos-Lara.pdf"
+                        className="flex items-center gap-3 p-4 bg-gray-800/50 backdrop-blur-sm rounded-xl border border-gray-700/50 hover:bg-gray-700/50 transition-colors">
+                        <div className="p-2 bg-blue-500/20 rounded-lg">
+                          <Download className="w-5 h-5 text-blue-400" />
+                        </div>
+                        <div>
+                          <p className="font-medium text-foreground">Currículum Vitae</p>
+                          <p className="text-xs text-foreground/60">PDF • 150 KB</p>
+                        </div>
+                      </a>
                     </div>
+                  </PortfolioCard>
+                </motion.div>
+              </div>
 
-                    <div className="pt-4">
-                      <h3 className="text-xl font-semibold text-foreground mb-4">Sígueme</h3>
-                      <div className="flex gap-4">
-                        {[
-                          { name: "GitHub", icon: <Github className="w-5 h-5" />, href: "https://github.com/Carloslara27" },
-                          { name: "LinkedIn", icon: <Linkedin className="w-5 h-5" />, href: "https://www.linkedin.com/in/carlos-lara-163234359/" },
-                        ].map((social, i) => (
-                          <motion.a
-                            key={social.name}
-                            href={social.href}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            whileHover={{ scale: 1.1, y: -2 }}
-                            whileTap={{ scale: 0.95 }}
-                            className="p-3 bg-gray-800/50 backdrop-blur-sm rounded-xl text-foreground/80 hover:text-foreground hover:bg-gray-700/50 border border-gray-700/50 transition-all">
-                            {social.icon}
-                          </motion.a>
-                        ))}
-                      </div>
-                    </div>
-                  </div>
-                </PortfolioCard>
-
-                <PortfolioCard delay={1}>
-                  <div className="space-y-4">
-                    <h3 className="text-xl font-semibold text-foreground">Descargar CV</h3>
-                    <a 
-                      href="/cv-carlos-lara.pdf"
-                      download="CV-Carlos-Lara.pdf"
-                      className="flex items-center gap-3 p-4 bg-gray-800/50 backdrop-blur-sm rounded-xl border border-gray-700/50 hover:bg-gray-700/50 transition-colors">
-                      <div className="p-2 bg-blue-500/20 rounded-lg">
-                        <Download className="w-5 h-5 text-blue-400" />
-                      </div>
-                      <div>
-                        <p className="font-medium text-foreground">Currículum Vitae</p>
-                        <p className="text-xs text-foreground/60">PDF • 150 KB</p>
-                      </div>
-                    </a>
-                  </div>
-                </PortfolioCard>
-              </motion.div>
-
-              <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true, margin: "-100px" }}
-                transition={{ duration: 0.6, delay: 0.2, ease: "easeOut" }}>
-                <PortfolioCard delay={0.8}>
-                  <div className="space-y-6">
-                    <h3 className="text-xl font-semibold text-foreground">Envíame un Mensaje</h3>
-                    <ContactForm />
-                  </div>
-                </PortfolioCard>
-              </motion.div>
+             
             </div>
           </div>
         </section>
