@@ -325,19 +325,20 @@ export default function Portfolio() {
                     "Sass/SCSS",
                   ].map((tech, i) => (
                     <motion.span
-                      key={tech}
+                       key={tech}
                       initial={{ opacity: 0, y: 10 }}
                       whileInView={{ opacity: 1, y: 0 }}
                       viewport={{ once: true }}
                       transition={{
-                        duration: 0.4,
-                        delay: i * 0.05,
+                        duration: 0.7,
+                        delay: 0.1 + i * 0.1,
+                        ease: "easeOut"
                       }}
                       whileHover={{
                         y: -2,
-                        transition: { duration: 0.2 },
+                        transition: { duration: 0.3 },
                       }}
-                      className="px-5 py-3 bg-muted/50 backdrop-blur-sm rounded-lg text-sm md:text-base font-medium text-foreground border border-border hover:border-foreground/30 transition-all duration-200 cursor-default"
+                      className="px-5 py-3 bg-muted/50 backdrop-blur-sm rounded-lg text-sm md:text-base font-medium text-foreground border border-border hover:border-foreground/30 transition-all duration-300 cursor-default"
                     >
                       {tech}
                     </motion.span>
@@ -375,14 +376,15 @@ export default function Portfolio() {
                       whileInView={{ opacity: 1, y: 0 }}
                       viewport={{ once: true }}
                       transition={{
-                        duration: 0.4,
-                        delay: 0.1 + i * 0.05,
+                        duration: 0.7,
+                        delay: 0.1 + i * 0.1,
+                        ease: "easeOut"
                       }}
                       whileHover={{
                         y: -2,
-                        transition: { duration: 0.2 },
+                        transition: { duration: 0.3 },
                       }}
-                      className="px-5 py-3 bg-muted/50 backdrop-blur-sm rounded-lg text-sm md:text-base font-medium text-foreground border border-border hover:border-foreground/30 transition-all duration-200 cursor-default"
+                      className="px-5 py-3 bg-muted/50 backdrop-blur-sm rounded-lg text-sm md:text-base font-medium text-foreground border border-border hover:border-foreground/30 transition-all duration-300 cursor-default"
                     >
                       {tech}
                     </motion.span>
@@ -411,14 +413,15 @@ export default function Portfolio() {
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
                         transition={{
-                          duration: 0.4,
-                          delay: 0.2 + i * 0.05,
+                          duration: 0.7,
+                          delay: 0.2 + i * 0.1,
+                          ease: "easeOut"
                         }}
                         whileHover={{
                           y: -2,
-                          transition: { duration: 0.2 },
+                          transition: { duration: 0.3 },
                         }}
-                        className="px-5 py-3 bg-muted/50 backdrop-blur-sm rounded-lg text-sm md:text-base font-medium text-foreground border border-border hover:border-foreground/30 transition-all duration-200 cursor-default"
+                        className="px-5 py-3 bg-muted/50 backdrop-blur-sm rounded-lg text-sm md:text-base font-medium text-foreground border border-border hover:border-foreground/30 transition-all duration-300 cursor-default"
                       >
                         {tool}
                       </motion.span>

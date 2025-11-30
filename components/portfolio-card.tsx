@@ -17,7 +17,7 @@ export function PortfolioCard({ children, delay = 0, className }: PortfolioCardP
       initial={{ opacity: 0, y: 20 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
-      transition={{ duration: 0.6, delay }}
+      transition={{ duration: 1, delay, ease: "easeOut" }}
       className={cn(
         "bg-card border border-border rounded-xl p-8 hover:border-foreground/20 transition-colors duration-300",
         className,

@@ -6,11 +6,40 @@ import { motion } from "framer-motion"
 const codeSnippets = [
   {
     language: "TypeScript",
-    code: `const buildAmazingThings = () => {\n  return "Let's create something great!";\n};`,
+    code: `// Desarrollador Full Stack
+const experiencia = {
+  años: 4,
+  especialidad: 'Aplicaciones web modernas',
+  enfoque: 'Código limpio + Interfaces elegantes',
+};
+
+// Soluciones escalables
+function resolverProblemas(usuarios: any[]) {
+  return usuarios.map(usuario => ({
+    experiencia: 'exceptional',
+    resultado: 'satisfaccion',
+  }));
+}
+`,
   },
   {
     language: "React",
-    code: `function Portfolio() {\n  return <Experience innovation={true} />;\n}`,
+    code: `// Función en React/JavaScript
+function resolverProblemas(usuarios) {
+  return usuarios.map(() => ({
+    experiencia: 'exceptional',
+    resultado: 'satisfaccion'
+  }));
+}
+
+// Clase Proyecto en JavaScript
+class Proyecto {
+  constructor(data) {
+    this.stack = data.stack;
+    this.estado = data.estado;
+    this.calidad = data.calidad;
+  }
+}`,
   },
 ]
 

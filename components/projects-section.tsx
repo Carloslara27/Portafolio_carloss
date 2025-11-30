@@ -42,7 +42,7 @@ export function ProjectsSection() {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          transition={{ duration: 0.6, delay: i * 0.1 }}
+          transition={{ duration: 1, delay: i * 0.15, ease: "easeOut" }}
         >
           <PortfolioCard className="h-full flex flex-col p-0 overflow-hidden group">
             <div className="relative h-48 overflow-hidden bg-muted">
@@ -50,7 +50,7 @@ export function ProjectsSection() {
                 src={project.image || "/placeholder.svg"}
                 alt={project.title}
                 fill
-                className="object-cover group-hover:scale-105 transition-transform duration-300"
+                className="object-cover group-hover:scale-105 transition-transform duration-500"
               />
             </div>
             <div className="p-6 flex-1 flex flex-col">
