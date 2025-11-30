@@ -17,7 +17,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="es" suppressHydrationWarning>
+    <html lang="es" suppressHydrationWarning className="transition-colors duration-300">
       <body className={`${inter.className} scroll-smooth`}>
         <ThemeProvider
           attribute="class"

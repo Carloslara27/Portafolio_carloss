@@ -81,7 +81,7 @@ export default function Portfolio() {
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                transition={{ duration: 0.6, delay: 0.2 }}
+                transition={{ duration: 0.9, delay: 0.5 }}
                 className="h-12 flex justify-center mb-12"
               >
                 <TextRoll texts={roles} className="text-muted-foreground text-xl md:text-2xl font-light" />
