@@ -13,6 +13,7 @@ import { BackToTop } from "@/components/back-to-top";
 import ScrollProgress from "@/components/scroll-progress";
 import { CodeTerminal } from "@/components/code-terminal";
 
+
 export default function Portfolio() {
   const roles = ["Full Stack Developer", "UI/UX Designer", "Frontend Specialist", "Creative Developer"];
   const interests = ["💻 Desarrollo de Software", "🤖 Inteligencia Artificial", "✈️ Viajar", "📚 Leer", "🎯 Productividad"];
