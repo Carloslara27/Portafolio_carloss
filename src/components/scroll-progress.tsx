@@ -1,27 +1,13 @@
-'use client';
-
-import { useState, useEffect } from 'react';
+"use client"
+import { motion, useScroll, useSpring } from "framer-motion"
 
 export default function ScrollProgress() {
-  const [scrollProgress, setScrollProgress] = useState(0);
+  const { scrollYProgress } = useScroll()
+  const scaleX = useSpring(scrollYProgress, {
+    stiffness: 100,
+    damping: 30,
+    restDelta: 0.001,
+  })
 
-  useEffect(() => {
-    const updateScrollProgress = () => {
-      const scrollPercentage = (window.scrollY / (document.documentElement.scrollHeight - window.innerHeight)) * 100;
-      setScrollProgress(scrollPercentage);
-    };
-
-    window.addEventListener('scroll', updateScrollProgress);
-    
-    return () => window.removeEventListener('scroll', updateScrollProgress);
-  }, []);
-
-  return (
-    <div className="fixed top-0 left-0 w-full h-1 bg-gray-800 z-[9999]">
-      <div 
-        className="h-full bg-gradient-to-r from-blue-500 to-purple-500 transition-all duration-150 ease-out"
-        style={{ width: `${scrollProgress}%` }}
-      />
-    </div>
-  );
+  return <motion.div className="fixed top-0 left-0 right-0 h-1 bg-foreground origin-left z-50" style={{ scaleX }} />
 }
