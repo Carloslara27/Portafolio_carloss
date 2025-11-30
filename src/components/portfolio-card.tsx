@@ -1,27 +1,27 @@
 "use client"
 
+import type React from "react"
+
 import { motion } from "framer-motion"
-import type { ReactNode } from "react"
+import { cn } from "@/lib/utils"
 
 interface PortfolioCardProps {
-  children: ReactNode
-  className?: string
+  children: React.ReactNode
   delay?: number
+  className?: string
 }
 
-export function PortfolioCard({ children, className = "", delay = 0 }: PortfolioCardProps) {
+export function PortfolioCard({ children, delay = 0, className }: PortfolioCardProps) {
   return (
     <motion.div
       initial={{ opacity: 0, y: 20 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.6, delay, ease: "easeOut" }}
-      whileHover={{ 
-        y: -8, 
-        transition: { duration: 0.3 },
-        boxShadow: "0 25px 50px -12px rgba(0, 0, 0, 0.3), 0 0 0 1px rgba(0, 0, 0, 0.1)"
-      }}
-      whileTap={{ scale: 0.98 }}
-      className={`bg-card/60 backdrop-blur-xl border border-border/80 rounded-2xl p-6 hover:bg-card/70 transition-all duration-300 shadow-lg ${className}`}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }}
+      transition={{ duration: 0.6, delay }}
+      className={cn(
+        "bg-card border border-border rounded-xl p-8 hover:border-foreground/20 transition-colors duration-300",
+        className,
+      )}
     >
       {children}
     </motion.div>

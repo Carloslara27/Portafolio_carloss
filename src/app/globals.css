@@ -162,20 +162,6 @@ html {
   color: var(--color-primary-foreground);
 }
 
-/* Modern typography styles */
-h1, h2, h3, h4, h5, h6 {
-  @apply font-sans font-semibold;
-}
-
-/* Enhanced link styles */
-a {
-  @apply transition-colors duration-200;
-}
-
-a:hover {
-  @apply text-primary;
-}
-
 /* Gradient text utility */
 .gradient-text {
   background: linear-gradient(135deg, var(--color-primary), var(--color-primary-foreground));
